@@ -62,6 +62,6 @@ Slackに新しいチャンネルが作られた際に通知するSlackボット�
   - `https://$project_name.vercel.app/api`のようなURL
 - URLを入れると「Verified」と表示され、フィードチャネルにテストメッセージがボットから投稿される。
 - 「Subscribe to bot events」の「Add Bot User Event」をクリックし、次のイベントを追加する。
-  - `message.channels`
+  - `channel_created`
 - 「Save Changes」ボタンを押して保存する。
 
