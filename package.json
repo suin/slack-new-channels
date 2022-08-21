@@ -1,0 +1,39 @@
+{
+  "name": "@suin/slack-new-channels",
+  "version": "0.0.0-development",
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "author": "suin",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    }
+  },
+  "files": [
+    "**/*.{js,ts,map}",
+    "!*.{test,spec}.*",
+    "!testUtils.*"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@slack/web-api": "^6.7.2"
+  },
+  "devDependencies": {
+    "@suin/tsconfig": "^0.0.0",
+    "@vercel/node": "^2.4.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  },
+  "packageManager": "yarn@1.22.18",
+  "engines": {
+    "node": ">=16.9"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
